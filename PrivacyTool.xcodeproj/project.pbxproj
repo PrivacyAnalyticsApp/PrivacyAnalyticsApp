@@ -13,8 +13,8 @@
 		BBADBB7F288FD1370099F24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBB6D288FD1360099F24E /* ContentView.swift */; };
 		BBADBB80288FD1370099F24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB6E288FD1370099F24E /* Assets.xcassets */; };
 		BBADBB81288FD1370099F24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB6E288FD1370099F24E /* Assets.xcassets */; };
-		BBADBB8B288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB8A288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson */; };
-		BBADBB8C288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB8A288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson */; };
+		BBADBB8E288FE92C0099F24E /* App_Privacy_Report.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB8D288FE92C0099F24E /* App_Privacy_Report.ndjson */; };
+		BBADBB8F288FE92C0099F24E /* App_Privacy_Report.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BBADBB8D288FE92C0099F24E /* App_Privacy_Report.ndjson */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		BBADBB73288FD1370099F24E /* PrivacyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBADBB79288FD1370099F24E /* PrivacyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBADBB7B288FD1370099F24E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		BBADBB8A288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson"; path = "../../App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson"; sourceTree = "<group>"; };
+		BBADBB8D288FE92C0099F24E /* App_Privacy_Report.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = App_Privacy_Report.ndjson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		BBADBB6B288FD1350099F24E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BBADBB8A288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson */,
+				BBADBB8D288FE92C0099F24E /* App_Privacy_Report.ndjson */,
 				BBADBB6C288FD1360099F24E /* PrivacyToolApp.swift */,
 				BBADBB6D288FD1360099F24E /* ContentView.swift */,
 				BBADBB6E288FD1370099F24E /* Assets.xcassets */,
@@ -161,8 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBADBB8E288FE92C0099F24E /* App_Privacy_Report.ndjson in Resources */,
 				BBADBB80288FD1370099F24E /* Assets.xcassets in Resources */,
-				BBADBB8B288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBADBB8F288FE92C0099F24E /* App_Privacy_Report.ndjson in Resources */,
 				BBADBB81288FD1370099F24E /* Assets.xcassets in Resources */,
-				BBADBB8C288FE82B0099F24E /* App_Privacy_Report_v4_2022-07-26T09_24_19.ndjson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
