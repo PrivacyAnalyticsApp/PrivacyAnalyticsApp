@@ -1,8 +1,7 @@
 //
 //  ContentView.swift
-//  Shared
+//  PrivacyAnalyticsApp
 //
-//  Created by Henri Bredt on 26.07.22.
 //
 
 import SwiftUI
