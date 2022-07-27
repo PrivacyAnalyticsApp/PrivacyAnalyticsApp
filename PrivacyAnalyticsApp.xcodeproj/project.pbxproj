@@ -8,15 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		BB4F0C8B28916DDC00503BA1 /* App_Privacy_Report.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BB4F0C8A28916DDC00503BA1 /* App_Privacy_Report.ndjson */; };
+		BB4F0C94289171D900503BA1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F0C93289171D900503BA1 /* ShareViewController.swift */; };
+		BB4F0C97289171D900503BA1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4F0C95289171D900503BA1 /* MainInterface.storyboard */; };
+		BB4F0C9B289171D900503BA1 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB4F0C91289171D900503BA1 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BBADBBCC28916D590099F24E /* PrivacyAnalyticsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBBCB28916D590099F24E /* PrivacyAnalyticsAppApp.swift */; };
 		BBADBBCE28916D590099F24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBBCD28916D590099F24E /* ContentView.swift */; };
 		BBADBBD028916D5B0099F24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBBCF28916D5B0099F24E /* Assets.xcassets */; };
 		BBADBBD328916D5B0099F24E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBBD228916D5B0099F24E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB4F0C99289171D900503BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBADBBC028916D590099F24E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4F0C90289171D900503BA1;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB4F0C9F289171D900503BA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB4F0C9B289171D900503BA1 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BB4F0C8A28916DDC00503BA1 /* App_Privacy_Report.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = App_Privacy_Report.ndjson; sourceTree = "<group>"; };
-		BBADBBC828916D590099F24E /* PrivacyAnalyticsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyAnalyticsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4F0C8C28916F4000503BA1 /* PrivacyAnalyticsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrivacyAnalyticsApp.entitlements; sourceTree = "<group>"; };
+		BB4F0C91289171D900503BA1 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4F0C93289171D900503BA1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		BB4F0C96289171D900503BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BB4F0C98289171D900503BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB4F0CA0289177D900503BA1 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		BBADBBC828916D590099F24E /* Privacy Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Privacy Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBADBBCB28916D590099F24E /* PrivacyAnalyticsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAnalyticsAppApp.swift; sourceTree = "<group>"; };
 		BBADBBCD28916D590099F24E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBADBBCF28916D5B0099F24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB4F0C8E289171D900503BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBADBBC528916D590099F24E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB4F0C92289171D900503BA1 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F0CA0289177D900503BA1 /* ShareExtension.entitlements */,
+				BB4F0C93289171D900503BA1 /* ShareViewController.swift */,
+				BB4F0C95289171D900503BA1 /* MainInterface.storyboard */,
+				BB4F0C98289171D900503BA1 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
 		BBADBBBF28916D590099F24E = {
 			isa = PBXGroup;
 			children = (
 				BBADBBCA28916D590099F24E /* PrivacyAnalyticsApp */,
+				BB4F0C92289171D900503BA1 /* ShareExtension */,
 				BBADBBC928916D590099F24E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,7 +97,8 @@
 		BBADBBC928916D590099F24E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBADBBC828916D590099F24E /* PrivacyAnalyticsApp.app */,
+				BBADBBC828916D590099F24E /* Privacy Analytics.app */,
+				BB4F0C91289171D900503BA1 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +106,7 @@
 		BBADBBCA28916D590099F24E /* PrivacyAnalyticsApp */ = {
 			isa = PBXGroup;
 			children = (
+				BB4F0C8C28916F4000503BA1 /* PrivacyAnalyticsApp.entitlements */,
 				BB4F0C8A28916DDC00503BA1 /* App_Privacy_Report.ndjson */,
 				BBADBBCB28916D590099F24E /* PrivacyAnalyticsAppApp.swift */,
 				BBADBBCD28916D590099F24E /* ContentView.swift */,
@@ -73,6 +127,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB4F0C90289171D900503BA1 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4F0C9C289171D900503BA1 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				BB4F0C8D289171D900503BA1 /* Sources */,
+				BB4F0C8E289171D900503BA1 /* Frameworks */,
+				BB4F0C8F289171D900503BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = BB4F0C91289171D900503BA1 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BBADBBC728916D590099F24E /* PrivacyAnalyticsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBADBBD628916D5B0099F24E /* Build configuration list for PBXNativeTarget "PrivacyAnalyticsApp" */;
@@ -80,14 +151,16 @@
 				BBADBBC428916D590099F24E /* Sources */,
 				BBADBBC528916D590099F24E /* Frameworks */,
 				BBADBBC628916D590099F24E /* Resources */,
+				BB4F0C9F289171D900503BA1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB4F0C9A289171D900503BA1 /* PBXTargetDependency */,
 			);
 			name = PrivacyAnalyticsApp;
 			productName = PrivacyAnalyticsApp;
-			productReference = BBADBBC828916D590099F24E /* PrivacyAnalyticsApp.app */;
+			productReference = BBADBBC828916D590099F24E /* Privacy Analytics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +173,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					BB4F0C90289171D900503BA1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					BBADBBC728916D590099F24E = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -119,11 +195,20 @@
 			projectRoot = "";
 			targets = (
 				BBADBBC728916D590099F24E /* PrivacyAnalyticsApp */,
+				BB4F0C90289171D900503BA1 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB4F0C8F289171D900503BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4F0C97289171D900503BA1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBADBBC628916D590099F24E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +222,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB4F0C8D289171D900503BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4F0C94289171D900503BA1 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBADBBC428916D590099F24E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +241,80 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB4F0C9A289171D900503BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4F0C90289171D900503BA1 /* ShareExtension */;
+			targetProxy = BB4F0C99289171D900503BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB4F0C95289171D900503BA1 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB4F0C96289171D900503BA1 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		BB4F0C9D289171D900503BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3J763Y9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.henribredt.PrivacyAnalyticsApp.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BB4F0C9E289171D900503BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3J763Y9A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.henribredt.PrivacyAnalyticsApp.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		BBADBBD428916D5B0099F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -199,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -253,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -266,8 +432,10 @@
 		BBADBBD728916D5B0099F24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrivacyAnalyticsApp/PrivacyAnalyticsApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PrivacyAnalyticsApp/Preview Content\"";
@@ -277,26 +445,30 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.henribredt.PrivacyAnalyticsApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Privacy Analytics";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BBADBBD828916D5B0099F24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrivacyAnalyticsApp/PrivacyAnalyticsApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PrivacyAnalyticsApp/Preview Content\"";
@@ -306,24 +478,35 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.henribredt.PrivacyAnalyticsApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Privacy Analytics";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB4F0C9C289171D900503BA1 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4F0C9D289171D900503BA1 /* Debug */,
+				BB4F0C9E289171D900503BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BBADBBC328916D590099F24E /* Build configuration list for PBXProject "PrivacyAnalyticsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
