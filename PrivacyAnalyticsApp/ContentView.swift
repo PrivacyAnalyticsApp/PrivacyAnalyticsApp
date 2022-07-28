@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  PrivacyAnalyticsApp
 //
-//
 
 import SwiftUI
 

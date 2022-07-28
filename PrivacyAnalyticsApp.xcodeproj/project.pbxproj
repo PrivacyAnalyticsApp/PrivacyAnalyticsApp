@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BB4F0C8B28916DDC00503BA1 /* App_Privacy_Report.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = BB4F0C8A28916DDC00503BA1 /* App_Privacy_Report.ndjson */; };
 		BB4F0C94289171D900503BA1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F0C93289171D900503BA1 /* ShareViewController.swift */; };
-		BB4F0C97289171D900503BA1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4F0C95289171D900503BA1 /* MainInterface.storyboard */; };
 		BB4F0C9B289171D900503BA1 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB4F0C91289171D900503BA1 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BBADBBCC28916D590099F24E /* PrivacyAnalyticsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBBCB28916D590099F24E /* PrivacyAnalyticsAppApp.swift */; };
 		BBADBBCE28916D590099F24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBBCD28916D590099F24E /* ContentView.swift */; };
@@ -46,7 +45,6 @@
 		BB4F0C8C28916F4000503BA1 /* PrivacyAnalyticsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrivacyAnalyticsApp.entitlements; sourceTree = "<group>"; };
 		BB4F0C91289171D900503BA1 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4F0C93289171D900503BA1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		BB4F0C96289171D900503BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		BB4F0C98289171D900503BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4F0CA0289177D900503BA1 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 		BBADBBC828916D590099F24E /* Privacy Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Privacy Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			children = (
 				BB4F0CA0289177D900503BA1 /* ShareExtension.entitlements */,
 				BB4F0C93289171D900503BA1 /* ShareViewController.swift */,
-				BB4F0C95289171D900503BA1 /* MainInterface.storyboard */,
 				BB4F0C98289171D900503BA1 /* Info.plist */,
 			);
 			path = ShareExtension;
@@ -205,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4F0C97289171D900503BA1 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,17 +244,6 @@
 			targetProxy = BB4F0C99289171D900503BA1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BB4F0C95289171D900503BA1 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB4F0C96289171D900503BA1 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB4F0C9D289171D900503BA1 /* Debug */ = {

@@ -2,29 +2,65 @@
 //  ShareViewController.swift
 //  ShareExtension
 //
-//  Created by Henri Bredt on 27.07.22.
-//
 
 import UIKit
 import Social
+import CoreServices
 
-class ShareViewController: SLComposeServiceViewController {
-
-    override func isContentValid() -> Bool {
-        // Do validation of contentText and/or NSExtensionContext attachments here
-        return true
-    }
-
-    override func didSelectPost() {
-        // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
+class ShareViewController: UIViewController {
     
-        // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+    // NOT WORKING, UI FREEZING
+    
+    private let typeJSON = String(kUTTypeJSON)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Get the all encompasing object that holds whatever was shared. If not, dismiss view.
+        guard let extensionItem = extensionContext?.inputItems.first as? NSExtensionItem,
+              let itemProvider = extensionItem.attachments?.first else {
+            self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+            return
+        }
+        
+        // Check if object is of type text
+        if itemProvider.hasItemConformingToTypeIdentifier(typeJSON) {
+            handleIncomingJSON(itemProvider: itemProvider)
+            // Check if object is of type JSON
+            print("IS JSON")
+        } else {
+            print("Error: No JSON file found")
+            self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+        }
+        
+        
     }
-
-    override func configurationItems() -> [Any]! {
-        // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
-        return []
+    
+    private func handleIncomingJSON(itemProvider: NSItemProvider) {
+        itemProvider.loadItem(forTypeIdentifier: typeJSON, options: nil) { (item, error) in
+            if let error = error {
+                print("JSON-Error: \(error.localizedDescription)")
+            }
+            
+            print("Found JSON file")
+            
+            self.extensionContext?.completeRequest(returningItems: nil, completionHandler: nil)
+        }
     }
-
+    
+    // https://stackoverflow.com/a/44499222/13363449
+    // Function must be named exactly like this so a selector can be found by the compiler!
+    // Anyway - it's another selector in another instance that would be "performed" instead.
+    @objc func openURL(_ url: URL) -> Bool {
+        var responder: UIResponder? = self
+        while responder != nil {
+            if let application = responder as? UIApplication {
+                return application.perform(#selector(openURL(_:)), with: url) != nil
+            }
+            responder = responder?.next
+        }
+        return false
+    }
+    
 }
+
