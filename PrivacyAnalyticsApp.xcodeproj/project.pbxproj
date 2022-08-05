@@ -14,6 +14,7 @@
 		BBADBBCE28916D590099F24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADBBCD28916D590099F24E /* ContentView.swift */; };
 		BBADBBD028916D5B0099F24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBBCF28916D5B0099F24E /* Assets.xcassets */; };
 		BBADBBD328916D5B0099F24E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBADBBD228916D5B0099F24E /* Preview Assets.xcassets */; };
+		BBE4AA32289DC6EB00A22B0C /* SaveLoadLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE4AA31289DC6EB00A22B0C /* SaveLoadLocalData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BBADBBCD28916D590099F24E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBADBBCF28916D5B0099F24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBADBBD228916D5B0099F24E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBE4AA31289DC6EB00A22B0C /* SaveLoadLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLoadLocalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				BB4F0C8A28916DDC00503BA1 /* App_Privacy_Report.ndjson */,
 				BBADBBCB28916D590099F24E /* PrivacyAnalyticsAppApp.swift */,
 				BBADBBCD28916D590099F24E /* ContentView.swift */,
+				BBE4AA31289DC6EB00A22B0C /* SaveLoadLocalData.swift */,
 				BBADBBCF28916D5B0099F24E /* Assets.xcassets */,
 				BBADBBD128916D5B0099F24E /* Preview Content */,
 			);
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE4AA32289DC6EB00A22B0C /* SaveLoadLocalData.swift in Sources */,
 				BBADBBCE28916D590099F24E /* ContentView.swift in Sources */,
 				BBADBBCC28916D590099F24E /* PrivacyAnalyticsAppApp.swift in Sources */,
 			);

@@ -52,6 +52,11 @@ struct ContentView: View {
                             let text = try String(contentsOf: safeReportURL)
                             content = text
                             
+                            // TEST: save and load the file
+                            let data = try Data(contentsOf: safeReportURL)
+                            saveLocalData(data)
+                            loadLocalData(named: "privacyReport.json")
+                            
                         } else {
                             print("No URL found")
                         }
